@@ -1,48 +1,8 @@
 <html>
 	<head>
-		<title>Tutorial de uso do dextra-maven-repo</title>
+		<title>Maven repo</title>
 	</head>
 	<body>
-<p>Para usar disponibilizar bibliotecas no repositório siga os passos abaixo:</p>
-
-<ol>
-	<li>Faça checkout do repositório:<br/>
-		<pre>
-		git clone -b gh-pages git@github.com:dextra/dextra-maven-repo.git
-		</pre>
-	</li>
-	<li>Faça maven deploy-file para a pasta do repositório:<br/>
-		<pre>
-		mvn deploy:deploy-file -DgroupId=SK.morena -DartifactId=morena -Dversion=6.4.1 -Dpackaging=jar -Dfile=/projects/shared/confidence_operacao/m2_repo/SK/morena/morena/6.4.1/morena-6.4.1.jar -Durl=file:///tmp/dextra-maven-repo/repository/ -DpomFile=/projects/shared/confidence_operacao/m2_repo/SK/morena/morena/6.4.1/morena-6.4.1.pom
-		</pre>
-	</li>
-	<li>Execute o script:<br/>
-		<pre>
-		./update-directory-index.sh
-		</pre>
-	</li>
-	<li>Faça commit:<br/>
-		<pre>
-		git add -A
-		git commit -m "..."
-		git push origin gh-pages
-		</pre>
-	</li>
-	<li>Configure no pom.xml do seu projeto:<br/>
-		<pre>
-                &lt;repository&gt;
-                        &lt;id&gt;static&lt;/id&gt;
-                        &lt;url&gt;http://dextra.github.com/dextra-maven-repo/repository/&lt;/url&gt;
-                        &lt;snapshots&gt;
-                                &lt;enabled&gt;false&lt;/enabled&gt;
-                        &lt;/snapshots&gt;
-                        &lt;releases&gt;
-                                &lt;updatePolicy&gt;never&lt;/updatePolicy&gt;
-                        &lt;/releases&gt;
-                &lt;/repository&gt;
-		</pre>
-		<p>Obs: lembre-se de configurar o proxy no seu settings.xml</p>
-	</li>
-</ol>
-</body>
+		<h1>Maven repo</h1>
+	</body>
 </html>
