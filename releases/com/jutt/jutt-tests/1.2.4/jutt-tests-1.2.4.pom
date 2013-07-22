@@ -7,28 +7,16 @@
 		<version>1.2.4</version>
 	</parent>
 	<groupId>com.jutt</groupId>
-	<artifactId>jutt</artifactId>
+	<artifactId>jutt-tests</artifactId>
 	<version>1.2.4</version>
 	<packaging>jar</packaging>
 
-	<name>jutt</name>
+	<name>jutt-tests</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
-	<distributionManagement>
-		<repository>
-			<id>repo</id>
-			<url>https://github.com/erickzanardo/maven/raw/master/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshot-repo</id>
-			<url>https://github.com/erickzanardo/maven/raw/master/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
-
 
 	<dependencies>
 		<dependency>
@@ -38,19 +26,14 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.mozilla</groupId>
-			<artifactId>rhino</artifactId>
-			<version>1.7R4</version>
-		</dependency>
-		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 			<version>2.2.2</version>
 		</dependency>
 		<dependency>
-			<groupId>org.jsoup</groupId>
-			<artifactId>jsoup</artifactId>
-			<version>1.7.1</version>
+			<groupId>com.jutt</groupId>
+			<artifactId>jutt</artifactId>
+			<version>1.2.4</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -62,20 +45,6 @@
 					<source>1.6</source>
 					<target>1.6</target>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-source-plugin</artifactId>
-				<version>2.2.1</version>
-				<executions>
-					<execution>
-						<id>attach-sources</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>jar-no-fork</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
