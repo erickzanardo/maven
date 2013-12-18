@@ -3,10 +3,18 @@
   <groupId>br.com</groupId>
   <artifactId>octohelper</artifactId>
   <versioning>
+<<<<<<< HEAD
     <release>0.1-alpha</release>
     <versions>
       <version>0.1-alpha</version>
     </versions>
     <lastUpdated>20130628101517</lastUpdated>
+=======
+    <release>0.2-alpha</release>
+    <versions>
+      <version>0.2-alpha</version>
+    </versions>
+    <lastUpdated>20130821010602</lastUpdated>
+>>>>>>> master
   </versioning>
 </metadata>
