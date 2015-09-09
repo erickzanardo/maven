@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>script-tasks-maven-plugin</name>
+      <prefix>scripttasks</prefix>
+      <artifactId>scripttasks-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>
