@@ -3,12 +3,13 @@
   <groupId>org.eck</groupId>
   <artifactId>locomotive</artifactId>
   <versioning>
-    <release>1.0.3-ALPHA</release>
+    <release>1.0.4-ALPHA</release>
     <versions>
       <version>1.0.1-ALPHA</version>
       <version>1.0.2-ALPHA</version>
       <version>1.0.3-ALPHA</version>
+      <version>1.0.4-ALPHA</version>
     </versions>
-    <lastUpdated>20150423123001</lastUpdated>
+    <lastUpdated>20160226133616</lastUpdated>
   </versioning>
 </metadata>
